@@ -1,43 +1,65 @@
-@font-face {
-	font-family: cuyabra;
-	src: url(../fonts/cuyabra.otf);
-}
 * {
-	font-family: cuyabra;
+	font-family: "Rajdhani", sans-serif;
 }
 body {
+	background: linear-gradient(60deg, #00b6ff, #0099e6) fixed;
 	margin: 0;
 	padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-	line-height: 10px;
+	margin: 0;
+	padding: 0;
 }
-.navbar {
-	background: #1e61dc;
+p {
+	margin: 0;
 }
-.navbar-dark .navbar-toggler {
-	border: 0;
+#container {
+	background: linear-gradient(145deg, #00b6ff, #0099e6);
+	width: 75%;
+	min-height: 50%;
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: auto;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	border-radius: 12px;
+	box-shadow: 5px 5px 10px #008acf,
+                -5px -5px 10px #00caff;
 }
-.navbar-light .navbar-toggler {
-	border: 0;
+#container a {
+	color: #ffffff;
 }
-nav .navbar-nav li a {
-	color: #fff !important;
+#container a:hover {
+	text-decoration: none;
 }
-.header {
-	margin-top: 170px;
-	color: #fff;
-	text-align: center;
-	max-height: 100vh;
-}
-.footer {
-	height: 45px;
+#header {
+	background: linear-gradient(145deg, #00b6ff, #0099e6);
 	padding: 5px;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	background: #1e74ff;
-	font-size: 12px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 12px;
+	box-shadow: 3px 3px 6px #008acf,
+                -3px -3px 6px #00caff;
+}
+#content-container {
+	margin-top: 10px;
+	display: flex;
+}
+#navbar {
+	flex: 0 0 10em;
+}
+#navbar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#footer {
 	width: 100%;
+	position: fixed;
+	bottom: 0;
+	font-size: 12px;
+	margin-bottom: 10px;
 }
