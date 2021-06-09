@@ -1,8 +1,8 @@
 * {
-	font-family: "Rajdhani", sans-serif;
+	font-family: "Manrope", sans-serif;
 }
 body {
-	background: linear-gradient(60deg, #00b6ff, #0099e6) fixed;
+	background: linear-gradient(270deg, #2eafff, #0d60be) fixed;
 	margin: 0;
 	padding: 0;
 }
@@ -13,53 +13,66 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	margin: 0;
 }
-#container {
-	background: linear-gradient(145deg, #00b6ff, #0099e6);
-	width: 75%;
-	min-height: 50%;
+#container, #header, #navbar, #footer {
 	color: #ffffff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
 	margin: auto;
-	transform: translate(-50%, -50%);
-	padding: 10px;
-	border-radius: 12px;
-	box-shadow: 5px 5px 10px #008acf,
-                -5px -5px 10px #00caff;
+	background: rgba(15, 15, 15, 0.25);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
-#container a {
+#container {
+	max-width: 96%;
+	min-height: 476px;
 	color: #ffffff;
+	margin-top: 3px;
+	padding: 10px;
 }
-#container a:hover {
-	text-decoration: none;
+#container, #navbar {
+	margin-top: 6px;
 }
 #header {
-	background: linear-gradient(145deg, #00b6ff, #0099e6);
+	margin-top: 12px;
+}
+#container a, #footer a {
+	color: #ffffff;
+}
+#container a:hover, #footer a:hover {
+	text-decoration: none;
+}
+#header, #navbar {
+	max-width: 96.7%;
 	padding: 5px;
+	text-align: center;
+}
+#header {
 	font-size: 30px;
 	font-weight: bold;
-	text-align: center;
-	border-radius: 12px;
-	box-shadow: 3px 3px 6px #008acf,
-                -3px -3px 6px #00caff;
 }
-#content-container {
-	margin-top: 10px;
-	display: flex;
+#navbar a {
+	text-decoration: none;
+	color: #ffffff;
 }
-#navbar {
-	flex: 0 0 10em;
+#navbar a:hover {
+	text-decoration: underline;
 }
-#navbar ul {
+#content, #container h1 {
+	margin-left: 5px;
+}
+#content ul {
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
+	margin-left: 20px;
 }
 #footer {
-	width: 100%;
-	position: fixed;
+	max-width: 96.7%;
 	bottom: 0;
 	font-size: 12px;
+	text-align: center;
+	padding: 5px;
+	margin: auto;
+	margin-top: 6px;
 	margin-bottom: 10px;
 }
