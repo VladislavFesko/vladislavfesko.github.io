@@ -1,8 +1,10 @@
 * {
-	font-family: "Manrope", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 body {
-	background: linear-gradient(270deg, #2eafff, #0d60be) fixed;
+	background: linear-gradient(90deg, #00adff, #005db2) fixed;
+	display: flex;
+	flex-direction: column;
 	margin: 0;
 	padding: 0;
 }
@@ -13,66 +15,70 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	margin: 0;
 }
-#container, #header, #navbar, #footer {
-	color: #ffffff;
+p, nav {
+	font-size: 15px;
+}
+main, nav, footer {
+	box-sizing: border-box;
+}
+main {
+	width: 100%;
+	min-height: 80.5vh;
+	top: 0;
+	left: 0;
 	margin: auto;
-	background: rgba(15, 15, 15, 0.25);
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(4px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-}
-#container {
-	max-width: 96%;
-	min-height: 476px;
+	background: rgba(0, 0, 0, 0.15);
 	color: #ffffff;
-	margin-top: 3px;
 	padding: 10px;
+	border-top: 1px solid #d9edff;
+	border-bottom: 1px solid #d9edff;
 }
-#container, #navbar {
-	margin-top: 6px;
-}
-#header {
-	margin-top: 12px;
-}
-#container a, #footer a {
+main a, footer a {
 	color: #ffffff;
 }
-#container a:hover, #footer a:hover {
+main a:hover, footer a:hover {
 	text-decoration: none;
 }
-#header, #navbar {
-	max-width: 96.7%;
-	padding: 5px;
+header, nav, footer {
+	color: #ffffff;
 	text-align: center;
 }
-#header {
+header {
 	font-size: 30px;
 	font-weight: bold;
+	margin-top: 6px;
 }
-#navbar a {
+nav {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	border-top: 1px solid #d9edff;
+}
+nav, footer {
+	margin: auto;
+	padding: 5px;
+}
+nav a {
 	text-decoration: none;
 	color: #ffffff;
 }
-#navbar a:hover {
+nav a:hover {
 	text-decoration: underline;
 }
-#content, #container h1 {
+#content, main h1, main h2 {
 	margin-left: 5px;
+}
+#content a, #content b, #content ul {
+	font-size: 15px;
 }
 #content ul {
 	margin: 0;
 	padding: 0;
 	margin-left: 20px;
 }
-#footer {
-	max-width: 96.7%;
-	bottom: 0;
+footer {
+	width: 100%;
 	font-size: 12px;
 	text-align: center;
-	padding: 5px;
-	margin: auto;
 	margin-top: 6px;
-	margin-bottom: 10px;
+	margin-bottom: 6px;
 }
