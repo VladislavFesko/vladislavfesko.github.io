@@ -1,0 +1,84 @@
+* {
+	font-family: "Poppins", sans-serif;
+}
+body {
+	background: linear-gradient(90deg, #00adff, #005db2) fixed;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin: 0;
+}
+p, nav {
+	font-size: 15px;
+}
+main, nav, footer {
+	box-sizing: border-box;
+}
+main {
+	width: 100%;
+	min-height: 80.5vh;
+	top: 0;
+	left: 0;
+	margin: auto;
+	background: rgba(0, 0, 0, 0.15);
+	color: #ffffff;
+	padding: 10px;
+	border-top: 1px solid #d9edff;
+	border-bottom: 1px solid #d9edff;
+}
+main a, footer a {
+	color: #ffffff;
+}
+main a:hover, footer a:hover {
+	text-decoration: none;
+}
+header, nav, footer {
+	color: #ffffff;
+	text-align: center;
+}
+header {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 6px;
+}
+nav {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	border-top: 1px solid #d9edff;
+}
+nav, footer {
+	margin: auto;
+	padding: 5px;
+}
+nav a {
+	text-decoration: none;
+	color: #ffffff;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+#content, main h1, main h2 {
+	margin-left: 5px;
+}
+#content a, #content b, #content ul {
+	font-size: 15px;
+}
+#content ul {
+	margin: 0;
+	padding: 0;
+	margin-left: 20px;
+}
+footer {
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
