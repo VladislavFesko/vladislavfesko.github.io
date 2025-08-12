@@ -39,6 +39,10 @@ a:hover {
     background: #1a6eb3;
     list-style-type: none;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 #header .menu li {
@@ -48,10 +52,14 @@ a:hover {
 #header .menu li a {
     color: #b7d8f7;
     padding: 10px 15px 10px 15px;
-    border-right: 1px solid rgba(98, 165, 219, 0.75);
+    border-right: 2px solid rgba(98, 165, 219, 0.75);
     display: block;
     text-decoration: none;
     transition: 0.4s;
+}
+
+#header .menu li:first-child a {
+    border-left: 2px solid rgba(98, 165, 219, 0.75);
 }
 
 #header .menu li a.active {
